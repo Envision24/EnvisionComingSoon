@@ -1,0 +1,119 @@
+@import url('../../css');
+@import url('../../css-1');
+@import url('../../css-2');
+@import url('../../css-3');
+/***********************font stylesheet start*********************/
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica-bold';
+    src:url('../fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica-roman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima';
+  src:url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima-semibold';
+    src: url('../fonts/ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima-bold';
+    src: url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/***********************font stylesheet end*********************/
+/***********************fonticon stylesheet start*********************/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-instagram:before {
+    content: "\e909";
+  }
+  .icon-responsive:before {
+    content: "\e90a";
+  }
+  .icon-school-material:before {
+    content: "\e90b";
+  }
+  .icon-stopwatch:before {
+    content: "\e90c";
+  }
+  .icon-vector:before {
+    content: "\e90d";
+  }
+  .icon-be:before {
+    content: "\e900";
+  }
+  .icon-dribbble:before {
+    content: "\e901";
+  }
+  .icon-fb:before {
+    content: "\e902";
+  }
+  .icon-gplus:before {
+    content: "\e903";
+  }
+  .icon-in:before {
+    content: "\e904";
+  }
+  .icon-pinterest:before {
+    content: "\e905";
+  }
+  .icon-twitter:before {
+    content: "\e906";
+  }
+  .icon-youtube:before {
+    content: "\e907";
+  }
+  .icon-foreign:before {
+    content: "\e908";
+  }
+/***********************fonticon stylesheet end*********************/
+html{
+    -webkit-text-size-adjust: 100%;
+    /* Font varient */
+    font-variant-ligatures: none;
+    -webkit-font-variant-ligatures: none;
+    /* Smoothing */
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
