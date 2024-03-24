@@ -86,13 +86,13 @@ body,html,.hidden_overflow{ overflow: hidden !important; position: relative;}
 .nightmode-font .time-left-txt,.nightmode-font .num,.nightmode-font .countdown-caption p,.nightmode-font .countdown-caption h2,.nightmode-font .social-row ul li a{ color: #ffffff; }
 
 .nightmode_bg{
-    background-color: #000000;
+    
 }
 .nightmode-font .copyright-txt,.nightmode-font .countdown-caption p .dull-text {
     color: rgba(255,255,255,0.30);
 }
 .nightmode-font .down-op{
-    color: #c5a35b;
+    color: red;
 }
 .white-font .copyright-txt,.white-font .down-op,.white-font .countdown-caption p .dull-text {
     color: rgba(255,255,255,0.30);
@@ -259,7 +259,7 @@ body {
 }
 .param {
     font-size: 20px;
-    color: #c5a35b;
+    color: red;
     text-transform: uppercase;
     margin-left: 5px;
     display: inline-block;
@@ -412,7 +412,7 @@ only screen and (                min-resolution: 2dppx) and ( max-width: 2000px)
     -o-transition: all 0.2s;
 } */
 .copyright-txt a {
-    color: #c5a25b;
+    color: red;
 }
 .countdown-caption {
     margin-bottom: 15.4vh;
@@ -903,7 +903,7 @@ svg.dark_digit{
     }
     .slot-type:nth-child(2):after {
         content: "SEC";
-        color: #c5a35b;
+        color: red;
         font-size: 17.6px;
         position: absolute;
         right: 8px;
