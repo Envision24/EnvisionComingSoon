@@ -227,7 +227,7 @@ body {
 }
 .countdown-row {
     position: relative;
-    margin:12.75vh 0 7.4vh 0;
+    /* margin:12.75vh 0 7.4vh 0; */
     z-index:12;
 }
 .logo {
