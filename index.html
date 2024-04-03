@@ -83,19 +83,51 @@
       <span> &nbsp; Srinivas Institute of Technology</span></div><br>
         <h4>Subscribe now to get the latest updates!</h4>
 
-
-        <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+        <form method="post"  onsubmit="submitForm(event)" class="php-email-forme">
           <div class="subscribe-form">
-            <input type="email" name="email"><input type="submit" value="Subscribe">
+            <input type="email" name="email" id="emailInput" required>
+            <input type="submit" value="Subscribe">
           </div>
           <div class="mt-2">
             <div class="loading">Loading</div>
-            <div class="error-message"></div>
+            <div class="error-message">Error</div>
             <div class="sent-message">Your notification request was sent. Thank you!</div>
           </div>
         </form>
-      </div>
-
+        
+        <script>
+          function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+        
+            const email = document.getElementById('emailInput').value; // Get the email value from the input field
+        
+            fetch('https://stark-scrubland-95757-829e66f8e728.herokuapp.com/api/newsletter', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ email: email }) // Send email as JSON in the request body
+            })
+            .then(response => {
+              if (response.ok) {
+                // If the request was successful, show the sent message
+                document.querySelector('.sent-message').style.display = 'block';
+                document.querySelector('.error-message').style.display = 'none';
+              } else {
+                // If there was an error, show the error message
+                document.querySelector('.sent-message').style.display = 'none';
+                document.querySelector('.error-message').style.display = 'block';
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              // If there was an error, show the error message
+              document.querySelector('.sent-message').style.display = 'none';
+              document.querySelector('.error-message').style.display = 'block';
+            });
+          }
+        </script>
+        
       <div class="social-links text-center">
         <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
         <a href="https://youtube.com/@sitmangalore?si=tIoNFNNMxObQTPn6" class="youtube"><i class="bi bi-youtube"></i></a>
